@@ -219,14 +219,8 @@ int main(void)
 
 	              char data[] = "ATI\r\n";
 	 	    	  char rsp[100];
-	 	    	  char *buffer = "ATI\r\n";
-	 	    	  char *rec_buffer = NULL;
-
 
 	 	   memset(rsp,0,sizeof(rsp));
-	 	   memset(rec_buffer,0,sizeof(rec_buffer));
-
-
 
      if(HAL_UART_Transmit(&huart1,(uint8_t *)data,strlen(data),500) == HAL_OK)
 	      {
